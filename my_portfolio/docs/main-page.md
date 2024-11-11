@@ -20,15 +20,15 @@ A szakmai célom, hogy a megszerzett tudást és készségeket a gyakorlatban ha
 
 ## Projektek
 
-- <Link to="/docs/nba_predi">NBA Draft Prediction az egyetemeti játékosok statisztikái alapján</Link>
-- <Link to="/docs/SOF_MVC_app">MVC Alapú Webalkalmazás</Link>
-- <Link to="/docs/license_plate_detection">Rendszámfelismerő Alkalmazás</Link>
-- <Link to="/docs/halal">Haladó Algoritmusok Projekt</Link>
-- <Link to="/docs/photoshop">Photoshop Alkalmazás</Link>
-- <Link to="/docs/HFT_CRUD">Rétegzett CRUD Alkalmazás</Link>
-- <Link to="/docs/BMP_grayscale">Szürkeárnyalatos Kép Konverzió</Link>
-- <Link to="/docs/cpp_oop">Társasházkezelő Alkalmazás - C++</Link>
-- <Link to="/docs/cpp_Game_of_life">Game of Life - C++</Link>
+- <Link to="/nba_predi">NBA Draft Prediction az egyetemeti játékosok statisztikái alapján</Link>
+- <Link to="/SOF_MVC_app">MVC Alapú Webalkalmazás</Link>
+- <Link to="/license_plate_detection">Rendszámfelismerő Alkalmazás</Link>
+- <Link to="/halal">Haladó Algoritmusok Projekt</Link>
+- <Link to="/photoshop">Photoshop Alkalmazás</Link>
+- <Link to="/HFT_CRUD">Rétegzett CRUD Alkalmazás</Link>
+- <Link to="/BMP_grayscale">Szürkeárnyalatos Kép Konverzió</Link>
+- <Link to="/cpp_oop">Társasházkezelő Alkalmazás - C++</Link>
+- <Link to="/cpp_Game_of_life">Game of Life - C++</Link>
 
 ## Szakmai tapasztalat
 - **MVM Informatika – Szoftverfejlesztő gyakornok**  
