@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-nba_predi" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.1">
+<title data-rh="true">NBA Draft Prediction | Portfolio</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://Barni6.github.io/portfolio/img/image1.jpeg"><meta data-rh="true" name="twitter:image" content="https://Barni6.github.io/portfolio/img/image1.jpeg"><meta data-rh="true" property="og:url" content="https://Barni6.github.io/portfolio/nba_predi"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="NBA Draft Prediction | Portfolio"><meta data-rh="true" name="description" content="Ez a projekt az NBA Draft Prediction problémára fókuszál, ahol gépi tanulási technikák segítségével igyekszem pontosan előre jelezni a draft során elvárható játékos helyezéseket. A cél egy olyan modell fejlesztése, amely figyelembe veszi az egyetemi kosárlabdázók különféle statisztikai adatait, és ezek alapján megbecsüli a draft pick helyezést. (A projekt saját átfogóbb és részletesebb dokumentációt tartalmaz.)"><meta data-rh="true" property="og:description" content="Ez a projekt az NBA Draft Prediction problémára fókuszál, ahol gépi tanulási technikák segítségével igyekszem pontosan előre jelezni a draft során elvárható játékos helyezéseket. A cél egy olyan modell fejlesztése, amely figyelembe veszi az egyetemi kosárlabdázók különféle statisztikai adatait, és ezek alapján megbecsüli a draft pick helyezést. (A projekt saját átfogóbb és részletesebb dokumentációt tartalmaz.)"><link data-rh="true" rel="icon" href="/portfolio/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://Barni6.github.io/portfolio/nba_predi"><link data-rh="true" rel="alternate" href="https://Barni6.github.io/portfolio/nba_predi" hreflang="en"><link data-rh="true" rel="alternate" href="https://Barni6.github.io/portfolio/nba_predi" hreflang="x-default"><link rel="stylesheet" href="/portfolio/assets/css/styles.9d961582.css">
+<script src="/portfolio/assets/js/runtime~main.8968426d.js" defer="defer"></script>
+<script src="/portfolio/assets/js/main.e6d0bc4a.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/portfolio/"><div class="navbar__logo"><img src="/portfolio/img/image1.jpeg" alt="Portfolio Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/portfolio/img/image1.jpeg" alt="Portfolio Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Portfolio</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/portfolio/">Projects</a></div><div class="navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/portfolio/">Portfólió</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/portfolio/nba_predi">NBA Draft Prediction</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/portfolio/SOF_MVC_app">MVC Alapú Webalkalmazás</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/portfolio/license_plate_detection">Rendszámfelismerő Alkalmazás</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/portfolio/halal">Haladó Algoritmusok Projekt</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/portfolio/photoshop">Photoshop Alkalmazás</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/portfolio/HFT_CRUD">Rétegzett CRUD Alkalmazás</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/portfolio/BMP_grayscale">Szürkeárnyalatos Kép Konverzió</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/portfolio/cpp_oop">Társasházkezelő Alkalmazás - C++</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/portfolio/cpp_Game_of_life">Game of Life - C++</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/portfolio/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">NBA Draft Prediction</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>NBA Draft Prediction</h1></header><p>Ez a projekt az <strong>NBA Draft Prediction</strong> problémára fókuszál, ahol gépi tanulási technikák segítségével igyekszem pontosan előre jelezni a draft során elvárható játékos helyezéseket. A cél egy olyan modell fejlesztése, amely figyelembe veszi az egyetemi kosárlabdázók különféle statisztikai adatait, és ezek alapján megbecsüli a draft pick helyezést. (A projekt saját átfogóbb és részletesebb dokumentációt tartalmaz.)</p>
+<ul>
+<li><strong>GitHub</strong>: <a href="https://github.com/Barni6/NBA_Draft_Prediction" target="_blank" rel="noopener noreferrer">Áttekintés</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tartalomjegyzék">Tartalomjegyzék<a href="#tartalomjegyzék" class="hash-link" aria-label="Direct link to Tartalomjegyzék" title="Direct link to Tartalomjegyzék">​</a></h2>
+<ol>
+<li><a href="#projekt-%C3%A1ttekint%C3%A9s">Projekt Áttekintés</a></li>
+<li><a href="#k%C3%B6nyvt%C3%A1rak-%C3%A9s-technol%C3%B3gi%C3%A1k">Könyvtárak és Technológiák</a></li>
+<li><a href="#adatok">Adatok</a></li>
+<li><a href="#modell%C3%A9p%C3%ADt%C3%A9s-%C3%A9s-ki%C3%A9rt%C3%A9kel%C3%A9s">Modellépítés és Kiértékelés</a></li>
+<li><a href="#vizualiz%C3%A1ci%C3%B3k">Vizualizációk</a></li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="projekt-áttekintés">Projekt Áttekintés<a href="#projekt-áttekintés" class="hash-link" aria-label="Direct link to Projekt Áttekintés" title="Direct link to Projekt Áttekintés">​</a></h2>
+<p>A projekt fő célkitűzései:</p>
+<ul>
+<li><strong>Előrejelzés</strong>: Egyedi játékos statisztikák alapján megbecsülni a draft pick értékét.</li>
+<li><strong>Hiperparaméter-optimalizálás</strong>: A Keras Tuner segítségével optimalizálni a modell teljesítményét.</li>
+<li><strong>Elemzés és Vizualizáció</strong>: Korrelációs elemzések, predikciók értékelése és grafikus ábrázolása.</li>
+</ul>
+<p>A modell a következő feladatokat végzi el:</p>
+<ol>
+<li><strong>Adatok betöltése és előkészítése</strong>.</li>
+<li><strong>Jellemzők kiválasztása</strong> a célváltozóval való korreláció alapján.</li>
+<li><strong>Hiperparaméter-optimalizálás</strong> egy pointwise modell építéséhez.</li>
+<li><strong>Validációs és teszt eredmények kiértékelése</strong>.</li>
+<li><strong>Hiányzó draft helyek kezelése és teljes rangsor létrehozása</strong>.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="könyvtárak-és-technológiák">Könyvtárak és Technológiák<a href="#könyvtárak-és-technológiák" class="hash-link" aria-label="Direct link to Könyvtárak és Technológiák" title="Direct link to Könyvtárak és Technológiák">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="könyvtárak">Könyvtárak<a href="#könyvtárak" class="hash-link" aria-label="Direct link to Könyvtárak" title="Direct link to Könyvtárak">​</a></h3>
+<ul>
+<li><strong>numpy, pandas</strong>: Adatkezelés és feldolgozás.</li>
+<li><strong>sklearn</strong>: Adatelőkészítés, validáció és metrikák.</li>
+<li><strong>tensorflow.keras</strong>: Modellépítés, tanítás és kiértékelés.</li>
+<li><strong>keras_tuner</strong>: Hiperparaméter-optimalizálás.</li>
+<li><strong>matplotlib, seaborn</strong>: Grafikonok és hőtérképek megjelenítése.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="technológiák">Technológiák<a href="#technológiák" class="hash-link" aria-label="Direct link to Technológiák" title="Direct link to Technológiák">​</a></h3>
+<ul>
+<li><strong>Adatfeldolgozás</strong>: RobustScaler skálázás a jellemzők stabilizálása érdekében.</li>
+<li><strong>Modellépítés</strong>: Pointwise regressziós modell több rejtett réteggel és dropout mechanizmussal.</li>
+<li><strong>Optimalizálás</strong>: Adam optimalizáló, EarlyStopping és ReduceLROnPlateau callbackek.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="adatok">Adatok<a href="#adatok" class="hash-link" aria-label="Direct link to Adatok" title="Direct link to Adatok">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="adatkészlet">Adatkészlet<a href="#adatkészlet" class="hash-link" aria-label="Direct link to Adatkészlet" title="Direct link to Adatkészlet">​</a></h3>
+<ul>
+<li><strong>drafted_players</strong>: A 2009-2021 közötti NBA draftolt játékosok adatai.</li>
+<li><strong>all_players_data</strong>: Az összes egyetemi kosárlabdázó adata azonos időszakból.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="adatok-előkészítése">Adatok előkészítése<a href="#adatok-előkészítése" class="hash-link" aria-label="Direct link to Adatok előkészítése" title="Direct link to Adatok előkészítése">​</a></h3>
+<ol>
+<li><strong>Összekapcsolás</strong>: Draftolt és nem draftolt játékosok adatainak összekapcsolása.</li>
+<li><strong>Szűrés</strong>: Duplikált sorok eltávolítása, új jellemzők létrehozása (<code>pts_per_min</code>).</li>
+<li><strong>Adathalmazok szétválasztása</strong>:<!-- -->
+<ul>
+<li>Tanító/validációs halmaz: Nem 2015-ös játékosok.</li>
+<li>Teszthalmaz: 2015-ös játékosok.</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="modellépítés-és-kiértékelés">Modellépítés és Kiértékelés<a href="#modellépítés-és-kiértékelés" class="hash-link" aria-label="Direct link to Modellépítés és Kiértékelés" title="Direct link to Modellépítés és Kiértékelés">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="modellépítés">Modellépítés<a href="#modellépítés" class="hash-link" aria-label="Direct link to Modellépítés" title="Direct link to Modellépítés">​</a></h3>
+<ul>
+<li><strong>Pointwise Modell</strong>:<!-- -->
+<ul>
+<li>Rejtett rétegek neuron száma és dropout aránya optimalizálva.</li>
+<li>Lineáris aktivációs kimeneti réteg.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="hiperparaméter-optimalizálás">Hiperparaméter-optimalizálás<a href="#hiperparaméter-optimalizálás" class="hash-link" aria-label="Direct link to Hiperparaméter-optimalizálás" title="Direct link to Hiperparaméter-optimalizálás">​</a></h3>
+<ul>
+<li>Keras Tuner segítségével 10 próbálkozás és 2 futtatás alapján optimalizált modell.</li>
+<li>Validációs MAE minimalizálása.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="kiértékelési-metrikák">Kiértékelési metrikák<a href="#kiértékelési-metrikák" class="hash-link" aria-label="Direct link to Kiértékelési metrikák" title="Direct link to Kiértékelési metrikák">​</a></h3>
+<ul>
+<li><strong>MAE</strong>: Átlagos abszolút eltérés.</li>
+<li><strong>R²</strong>: Modell illeszkedésének mértéke.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="eredmények">Eredmények<a href="#eredmények" class="hash-link" aria-label="Direct link to Eredmények" title="Direct link to Eredmények">​</a></h3>
+<ul>
+<li>Validációs és teszt predikciók MAE és R² értékei kiemelve.</li>
+<li>Validation MAE: 8.994453525543213</li>
+<li>Validation R²: 0.5080301474784779</li>
+<li>Test MAE: 8.240730194818406</li>
+<li>Test R²: 0.6052464262021787</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="vizualizációk">Vizualizációk<a href="#vizualizációk" class="hash-link" aria-label="Direct link to Vizualizációk" title="Direct link to Vizualizációk">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="korrelációs-mátrix">Korrelációs Mátrix<a href="#korrelációs-mátrix" class="hash-link" aria-label="Direct link to Korrelációs Mátrix" title="Direct link to Korrelációs Mátrix">​</a></h3>
+<p>A célváltozóval (pick) való kapcsolat ábrázolása:</p>
+<p><img decoding="async" loading="lazy" alt="Korrelációs Hőtérkép" src="/portfolio/assets/images/heat_map-70c8d9a80e1bd53f09f5f455061f5185.png" width="938" height="1010" class="img_ev3q"></p>
+<ul>
+<li>Korreláció erdményei lapján tanításra felhasznált változók:</li>
+</ul>
+<p>features =  [&#x27;Ortg&#x27;, &#x27;eFG&#x27;, &#x27;TS_per&#x27;, &#x27;FTM&#x27;, &#x27;FTA&#x27;, &#x27;twoPM&#x27;, &#x27;twoP_per&#x27;, &#x27;stl_per&#x27;,
+&#x27;ftr&#x27;, &#x27;porpag&#x27;, &#x27;adjoe&#x27;, &#x27;drtg&#x27;, &#x27;adrtg&#x27;, &#x27;dporpag&#x27;, &#x27;stops&#x27;,
+&#x27;bpm&#x27;, &#x27;obpm&#x27;, &#x27;dbpm&#x27;, &#x27;gbpm&#x27;, &#x27;ogbpm&#x27;, &#x27;dgbpm&#x27;, &#x27;oreb&#x27;, &#x27;stl&#x27;, &#x27;blk&#x27;, &#x27;pts_per_min&#x27;]</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="scatter-plotok">Scatter Plotok<a href="#scatter-plotok" class="hash-link" aria-label="Direct link to Scatter Plotok" title="Direct link to Scatter Plotok">​</a></h3>
+<p>A valós és előrejelzett nyers predikció értékek összehasonlítása:</p>
+<ul>
+<li>
+<p><strong>Validációs halmaz</strong>:</p>
+<p><img decoding="async" loading="lazy" alt="Scatter Validáció" src="/portfolio/assets/images/nyers_val-c415474972018b8ef3567335ef1d0b89.png" width="843" height="704" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>Teszthalmaz</strong>:</p>
+<p><img decoding="async" loading="lazy" alt="Scatter Teszt" src="/portfolio/assets/images/nyers_teszt-05a17c73e270da5fbaacba4c8153e653.png" width="843" height="704" class="img_ev3q"></p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="predikciók-vizualizálása">Predikciók Vizualizálása<a href="#predikciók-vizualizálása" class="hash-link" aria-label="Direct link to Predikciók Vizualizálása" title="Direct link to Predikciók Vizualizálása">​</a></h3>
+<p>Sorrend felállítása az eredeti és prediktált pick értékek alapján:</p>
+<ul>
+<li><strong>Validációs halmaz</strong>:
+<img decoding="async" loading="lazy" alt="Validációs Predikciók" src="/portfolio/assets/images/order_val-ff416338e44cb8a07302d55fc270c5f8.png" width="990" height="590" class="img_ev3q"></li>
+<li><strong>Teszthalmaz</strong>:
+<img decoding="async" loading="lazy" alt="Teszthalmaz Predikciók" src="/portfolio/assets/images/order_teszt-9495440fd54855a39e85c591ca462908.png" width="990" height="590" class="img_ev3q"></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="eltérések-ábrázolása">Eltérések Ábrázolása<a href="#eltérések-ábrázolása" class="hash-link" aria-label="Direct link to Eltérések Ábrázolása" title="Direct link to Eltérések Ábrázolása">​</a></h3>
+<p>Az eredeti és preditált pick értékek közötti különséget szemléltető ábrák:</p>
+<ul>
+<li><strong>Validációs halmaz</strong>:
+<img decoding="async" loading="lazy" alt="Eltérések Validáció" src="/portfolio/assets/images/miss_val-6b3bee3349a496b24b2fa38f90c96138.png" width="989" height="590" class="img_ev3q"></li>
+<li><strong>Teszthalmaz</strong>:
+<img decoding="async" loading="lazy" alt="Eltérések Teszt" src="/portfolio/assets/images/miss_teszt-64d513a43e9243725415c0f0675cc5a6.png" width="989" height="590" class="img_ev3q"></li>
+</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/portfolio/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Portfólió</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/portfolio/SOF_MVC_app"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MVC Alapú Webalkalmazás</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#tartalomjegyzék" class="table-of-contents__link toc-highlight">Tartalomjegyzék</a></li><li><a href="#projekt-áttekintés" class="table-of-contents__link toc-highlight">Projekt Áttekintés</a></li><li><a href="#könyvtárak-és-technológiák" class="table-of-contents__link toc-highlight">Könyvtárak és Technológiák</a><ul><li><a href="#könyvtárak" class="table-of-contents__link toc-highlight">Könyvtárak</a></li><li><a href="#technológiák" class="table-of-contents__link toc-highlight">Technológiák</a></li></ul></li><li><a href="#adatok" class="table-of-contents__link toc-highlight">Adatok</a><ul><li><a href="#adatkészlet" class="table-of-contents__link toc-highlight">Adatkészlet</a></li><li><a href="#adatok-előkészítése" class="table-of-contents__link toc-highlight">Adatok előkészítése</a></li></ul></li><li><a href="#modellépítés-és-kiértékelés" class="table-of-contents__link toc-highlight">Modellépítés és Kiértékelés</a><ul><li><a href="#modellépítés" class="table-of-contents__link toc-highlight">Modellépítés</a></li><li><a href="#hiperparaméter-optimalizálás" class="table-of-contents__link toc-highlight">Hiperparaméter-optimalizálás</a></li><li><a href="#kiértékelési-metrikák" class="table-of-contents__link toc-highlight">Kiértékelési metrikák</a></li><li><a href="#eredmények" class="table-of-contents__link toc-highlight">Eredmények</a></li></ul></li><li><a href="#vizualizációk" class="table-of-contents__link toc-highlight">Vizualizációk</a><ul><li><a href="#korrelációs-mátrix" class="table-of-contents__link toc-highlight">Korrelációs Mátrix</a></li><li><a href="#scatter-plotok" class="table-of-contents__link toc-highlight">Scatter Plotok</a></li><li><a href="#predikciók-vizualizálása" class="table-of-contents__link toc-highlight">Predikciók Vizualizálása</a></li><li><a href="#eltérések-ábrázolása" class="table-of-contents__link toc-highlight">Eltérések Ábrázolása</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Links</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Barni6" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.linkedin.com/in/barnab%C3%A1s-szombat-24a4a3313/" target="_blank" rel="noopener noreferrer" class="footer__link-item">LinkedIn<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Szombat Barnabás.</div></div></div></footer></div>
+</body>
+</html>
