@@ -88,4 +88,16 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 };
 
+module.exports = {
+  title: 'Portfolio',
+  tagline: 'Személyes portfólióm',
+  url: 'https://<Barni6>.github.io',
+  baseUrl: '/<portfolio>/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  organizationName: '<Barni6>', // A GitHub fiókod neve
+  projectName: '<repo-nev>', // A repozitórium neve
+};
+
+
 export default config;
